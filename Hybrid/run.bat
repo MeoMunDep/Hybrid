@@ -62,7 +62,7 @@ if not exist configs.json (
     echo   "delayEachAccount": [5, 8],>> configs.json
     echo   "timeToRestartAllAccounts": 300,>> configs.json
     echo   "howManyAccountsRunInOneTime": 100,>> configs.json
-    echo   "doTasks": true,>> configs.json
+    echo   "doTasks": true>> configs.json
     echo }>> configs.json
     echo Created configs.json
 )
