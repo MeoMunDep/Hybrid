@@ -2,7 +2,7 @@
 
 Welcome to the bot setup guide! Follow the steps below to install and configure the bot correctly. This guide is designed to be beginner-friendly, with clear explanations for each step.
 
-> [Termux guides if you run on mobile](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux.)
+> [Termux guides if you run on mobile](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux)
 
 ---
 
@@ -43,7 +43,7 @@ Download Node.js and npm here: [Download Link](https://t.me/KeoAirDropFreeNe/257
    Open your terminal or command prompt, navigate to the folder where the bot files are located, and run:
 
    ```bash
-   npm install --force user-agents axios colors p-limit https-proxy-agent socks-proxy-agent crypto-js ws uuid xlsx readline-sync moment lodash qs
+   npm install --force user-agents axios https-proxy-agent socks-proxy-agent 
    ```
 
    If you encounter an Execution Policy error on Windows, run:
@@ -74,7 +74,8 @@ This file controls the bot’s behavior. Below is an example configuration:
   "delayEachAccount": [5, 8],
   "timeToRestartAllAccounts": 300,
   "howManyAccountsRunInOneTime": 100,
-  "doTasks": true
+  "doTasks": true,
+  "connectWallet": true
 }
 ```
 
@@ -87,10 +88,11 @@ This file controls the bot’s behavior. Below is an example configuration:
   - `timeToRestartAllAccounts`: Time (in seconds) to restart all accounts.
   - `howManyAccountsRunInOneTime`: Number of accounts to run simultaneously.
   - `doTasks`: Enable task completion.
+  - `connectWallet`: Enable wallet connection.
 
 ### 2. `datas.txt` - 🗂️ User Data
 
-- Fill the data for `datas.txt` file, get data from [here](https://t.me/KeoAirDropFreeNe/257/6879). This file contains user data in the following format:
+- [Get it from here](https://t.me/KeoAirDropFreeNee/1586)
 
 ```txt
 query_id.../user...
@@ -117,11 +119,17 @@ _Note: Wallet updates are currently not supported._
 
 If you are using proxies, add them here. Leave the file blank if you are not using proxies. Supported formats:
 
+- [Get it from here](https://www.webshare.io/?referral_code=4l5kb3glsce7)
+
 ```txt
-http://user:password@host:port
-https://user:password@host:port
-socks4://user:password@host:port
-socks5://user:password@host:port
+http://host:port
+https://host:port
+socks4://host:port
+socks5://host:port
+http://user:pass@host:port
+https://user:pass@host:port
+socks4://user:pass@host:port
+socks5://user:pass@host:port
 ```
 
 _Note: each row for each account_
