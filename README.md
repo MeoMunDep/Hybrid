@@ -108,9 +108,9 @@ _Note: Each row for each account_
 - Add your wallet addresses in the following format:
 
 ```txt
-abc...xyz
-abc...xyz
-abc...xyz
+EVM address
+EVM address
+EVM address
 ```
 
 _Note: Wallet updates are currently not supported._
