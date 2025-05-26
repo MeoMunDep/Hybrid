@@ -10,7 +10,7 @@
   "bridgeTime": [1, 5],
   "gasLimit": 100000,
 
-   "faucet": {
+  "faucet": {
     "maxCaptchaAttempts": 20,
     "2captchaApiKey": ""
   }
