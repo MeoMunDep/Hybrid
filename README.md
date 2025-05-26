@@ -43,7 +43,7 @@ Download Node.js and npm here: [Download Link](https://t.me/KeoAirDropFreeNe/257
    Open your terminal or command prompt, navigate to the folder where the bot files are located, and run:
 
    ```bash
-   npm install --force user-agents axios https-proxy-agent socks-proxy-agent 
+   npm install --force user-agents axios https-proxy-agent socks-proxy-agent meo-forkcy-colors ethers web3 
    ```
 
    If you encounter an Execution Policy error on Windows, run:
@@ -174,7 +174,7 @@ _Note: each row for each account_
 1. Navigate to the folder containing the bot files:
 
    ```bash
-   cd /path/to/meomundep-folder
+   cd /path/to/hybrid
    ```
 
 2. Run the bot using the following command:
