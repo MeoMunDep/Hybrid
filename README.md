@@ -126,18 +126,6 @@ This file controls the bot’s behavior. Below is an example configuration:
 
 ---
 
-### 2. `datas.txt` - 🗂️ User Data
-
-- [Get it from here](https://t.me/KeoAirDropFreeNee/1586)
-
-```txt
-query_id.../user...
-query_id.../user...
-query_id.../user...
-```
-
-_Note: Each row for each account_
-
 ### 2. `privateKeys.txt` - 💼 Wallet Addresses
 
 - Wallets generator: [Link](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
