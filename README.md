@@ -70,23 +70,58 @@ This file controls the bot’s behavior. Below is an example configuration:
   "rotateProxy": false,
   "skipInvalidProxy": false,
   "proxyRotationInterval": 2,
-  "delayEachAccount": [5, 8],
+  "delayEachAccount": [1, 1],
   "timeToRestartAllAccounts": 300,
-  "howManyAccountsRunInOneTime": 100,
-  "doTasks": true,
-  "connectWallet": true
+  "howManyAccountsRunInOneTime": 10,
+
+   "faucet": {
+    "maxCaptchaAttempts": 20,
+    "2captchaApiKey": ""
+  }
 }
 ```
 
-- **Fields Explained:**
-  - `rotateProxy`: Enable or disable proxy rotation.
-  - `skipInvalidProxy`: Skip invalid proxies if `true`.
-  - `proxyRotationInterval`: Time interval (in minutes) for rotating proxies.
-  - `delayEachAccount`: Random delay range (in seconds) between accounts.
-  - `timeToRestartAllAccounts`: Time (in seconds) to restart all accounts.
-  - `howManyAccountsRunInOneTime`: Number of accounts to run simultaneously.
-  - `doTasks`: Enable task completion.
-  - `connectWallet`: Enable wallet connection.
+---
+
+### Configuration Options
+
+* `rotateProxy`: Enable or disable proxy rotation.
+
+  * **false** means all accounts use a fixed proxy (or no proxy if unspecified).
+
+* `skipInvalidProxy`: Skip invalid proxies if `true`.
+
+  * **false** will stop the program if a proxy fails.
+
+* `proxyRotationInterval`: Time interval (in **minutes**) for rotating proxies (only applies if `rotateProxy` is `true`).
+
+  * Example: `2` means rotate every 2 minutes.
+
+* `delayEachAccount`: Random delay range (in **seconds**) between starting each account.
+
+  * Example: `[1, 1]` means a fixed 1-second delay.
+
+* `timeToRestartAllAccounts`: Time (in **seconds**) to wait before restarting all accounts once finished.
+
+  * Example: `300` means restart every 5 minutes.
+
+* `howManyAccountsRunInOneTime`: Number of accounts to run in parallel at a time.
+
+  * Example: `10` means run 10 accounts simultaneously.
+
+---
+
+### Faucet Settings
+
+* `faucet.maxCaptchaAttempts`: Maximum number of attempts to solve CAPTCHA per account.
+
+  * Example: `20`
+
+* `faucet.2captchaApiKey`: Your 2Captcha API key for solving CAPTCHA challenges.
+
+  * Leave it empty (`""`) to disable CAPTCHA solving.
+
+---
 
 ### 2. `datas.txt` - 🗂️ User Data
 
