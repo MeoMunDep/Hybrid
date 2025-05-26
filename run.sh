@@ -40,6 +40,10 @@ create_default_configs() {
   "timeToRestartAllAccounts": 300,
   "howManyAccountsRunInOneTime": 10,
 
+  "bridgeAmount": [1, 5],
+  "bridgeTime": [1, 5],
+  "gasLimit": 100000,
+
   "faucet": {
     "maxCaptchaAttempts": 20,
     "2captchaApiKey": ""
