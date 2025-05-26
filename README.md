@@ -146,7 +146,7 @@ _Note: each row for each account_
 
 2. Run the bot using the following command:
    ```bash
-   node meomundep.js
+   node tx_meomundep.js
    ```
 
 ---
