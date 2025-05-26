@@ -12,9 +12,8 @@ Welcome to the bot setup guide! Follow the steps below to install and configure 
 2. [Installation Steps](#installation-steps)
 3. [Configuration Files](#configuration-files)
    - [`configs.json`](#1-configsjson)
-   - [`datas.txt`](#2-datastxt)
-   - [`wallets.txt`](#3-walletstxt)
-   - [`proxies.txt`](#4-proxiestxt)
+   - [`privateKeys.txt`](#2-walletstxt)
+   - [`proxies.txt`](#3-proxiestxt)
 4. [Running the Bot](#running-the-bot)
 5. [Contact and Support](#contact-and-support)
 
@@ -73,6 +72,10 @@ This file controls the bot’s behavior. Below is an example configuration:
   "delayEachAccount": [1, 1],
   "timeToRestartAllAccounts": 300,
   "howManyAccountsRunInOneTime": 10,
+
+  "bridgeAmount": [1, 5],
+  "bridgeTime": [1, 5],
+  "gasLimit": 100000,
 
    "faucet": {
     "maxCaptchaAttempts": 20,
@@ -135,20 +138,20 @@ query_id.../user...
 
 _Note: Each row for each account_
 
-### 3. `wallets.txt` - 💼 Wallet Addresses
+### 2. `privateKeys.txt` - 💼 Wallet Addresses
 
 - Wallets generator: [Link](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
 - Add your wallet addresses in the following format:
 
 ```txt
-EVM address
-EVM address
-EVM address
+EVM privatekey
+EVM privatekey
+EVM privatekey
 ```
 
 _Note: Wallet updates are currently not supported._
 
-### 4. `proxies.txt` - 🌐 Proxy List (Optional)
+### 3. `proxies.txt` - 🌐 Proxy List (Optional)
 
 If you are using proxies, add them here. Leave the file blank if you are not using proxies. Supported formats:
 
