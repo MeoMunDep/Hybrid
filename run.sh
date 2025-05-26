@@ -39,8 +39,11 @@ create_default_configs() {
   "delayEachAccount": [1, 1],
   "timeToRestartAllAccounts": 300,
   "howManyAccountsRunInOneTime": 10,
-  "doTasks": true,
-  "connectWallet": true
+
+  "faucet": {
+    "maxCaptchaAttempts": 20,
+    "2captchaApiKey": ""
+  }
 }
 EOL
 }
