@@ -1,1 +1,1 @@
-console.log(`Just waiting for 50 stars...`)
+console.log(`Wait for claim`)
